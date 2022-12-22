@@ -4,7 +4,7 @@ import mongoose from 'mongoose'
 import Router from './routes/route.js'
 const app = express()
 
-mongoose.connect('mongodb://localhost:27017/blog')
+mongoose.connect('mongodb+srv://PankajKumar:PankajKumar@myblog.2dxtlat.mongodb.net/?retryWrites=true&w=majority')
 
 app.use(cors())
 app.use(express.json())

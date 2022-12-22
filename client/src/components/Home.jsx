@@ -45,7 +45,7 @@ const navigate =useNavigate()
                   <img src={e.picture} width="100%" height="300px" alt="" />
                 </div>
                 <div>
-                  <h1> {e.title}</h1>
+                  <h3> {e.title}</h3>
                 </div>
               </div>
             );
