@@ -15,7 +15,7 @@ const navigate =useNavigate()
   const jwt = localStorage.getItem("jwt");
   useEffect(() => {
     axios
-      .get("http://localhost:8080/posts", {
+      .get("https://silly-wasp-fez.cyclic.app/posts", {
         headers: { Authorization: "Bearer " + jwt },
       })
       .then((res) => {

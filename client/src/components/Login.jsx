@@ -17,7 +17,7 @@ const Login = () => {
   const handleLoginSubmit = async(e) => {
     e.preventDefault();
     console.log(userLoginInfo);
-    await axios.post("http://localhost:8080/login",userLoginInfo)
+    await axios.post("https://silly-wasp-fez.cyclic.app/login",userLoginInfo)
     .then((res)=>{
       console.log(res.data)
       localStorage.setItem("jwt",res.data.token)

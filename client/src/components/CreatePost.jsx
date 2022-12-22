@@ -24,7 +24,7 @@ const CreatePost = () => {
     e.preventDefault();
     const jwt = localStorage.getItem("jwt");
     axios
-      .post("http://localhost:8080/create", postData, {
+      .post("https://silly-wasp-fez.cyclic.app/create", postData, {
         headers: {
           Authorization: "Bearer " + jwt,
           "Content-Type": "application/json",

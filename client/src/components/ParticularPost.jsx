@@ -13,7 +13,7 @@ const ParticularPost = () => {
   const jwt = localStorage.getItem("jwt");
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/post/${id}`, {
+      .get(`https://silly-wasp-fez.cyclic.app/${id}`, {
         headers: { Authorization: "Bearer " + jwt },
       })
       .then((res) => {

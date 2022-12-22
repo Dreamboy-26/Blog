@@ -22,7 +22,7 @@ const navigate=useNavigate()
 const handleFormSubmit=async(e)=>{
     e.preventDefault()
 console.log(userInfo)
- await axios.post("http://localhost:8080/signup",userInfo)
+ await axios.post("https://silly-wasp-fez.cyclic.app/signup",userInfo)
 .then(()=>{
  
   navigate("/signin")
