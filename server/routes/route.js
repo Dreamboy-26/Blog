@@ -6,6 +6,7 @@ import {
   deletePost,
   getPost,
   getAllPosts,
+  demo
 } from '../controller/postController.js'
 
 import {
@@ -14,6 +15,8 @@ import {
 } from '../controller/userController.js'
 
 const router = express.Router()
+
+router.get("/" ,demo)
 
 router.post('/login', loginUser)
 router.post('/signup', singupUser)

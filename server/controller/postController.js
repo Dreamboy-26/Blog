@@ -1,5 +1,10 @@
 import Post from '../model/post.js'
 
+
+export const demo=async(req,res)=>{
+  res.send("hello world")
+}
+
 export const createPost = async (req, res) => {
   try {
     const post = await new Post(req.body)
