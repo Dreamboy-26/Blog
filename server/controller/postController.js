@@ -4,7 +4,6 @@ export const createPost = async (req, res) => {
   try {
     const post = await new Post(req.body)
     post.save()
-
     res.status(200).json('Post saved successfully')
   } catch (error) {
     res.status(500).json(error)
@@ -41,6 +40,7 @@ export const deletePost = async (req, res) => {
 
 export const getPost = async (req, res) => {
   try {
+    
     const post = await Post.findById(req.params.id)
 
     res.status(200).json(post)

@@ -29,11 +29,16 @@ console.log(userInfo)
 })
 
 
-}
 
+}
+const handleSignin=()=>{
+    
+    navigate("/signin")
+  }
   return (
-    <div>
-        <form onSubmit={handleFormSubmit}>
+    <div className='signupContainer'>
+  <div >
+        <form onSubmit={handleFormSubmit} className="form">
             <div>
                 <input type="text" placeholder='Enter Name' name='name' onChange={(e)=>handleFormData(e)} />
             </div>
@@ -49,8 +54,11 @@ console.log(userInfo)
             <div>
                 <input type="submit"  />
             </div>
+        <p>already have an account <span onClick={handleSignin} color="blue">Singin</span></p>
         </form>
     </div>
+    </div>
+  
   )
 }
 

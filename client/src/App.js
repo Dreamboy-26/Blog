@@ -6,10 +6,12 @@ import CreatePost from './components/CreatePost';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import ParticularPost from './components/ParticularPost';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/signup' element={<SignUp/>} />
